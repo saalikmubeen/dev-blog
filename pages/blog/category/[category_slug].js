@@ -67,6 +67,7 @@ export async function getStaticProps({ params }) {
     const categories = []
 
     const posts = files.map((file) => {
+        const slug =  file.replace(".md", "");
 
         const post = fs.readFileSync(
             path.resolve(process.cwd(), "posts", file),
@@ -77,6 +78,7 @@ export async function getStaticProps({ params }) {
         categories.push(frontmatter.category)
 
         return {
+            slug,
             frontmatter,
         };
     });

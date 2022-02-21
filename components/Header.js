@@ -1,7 +1,10 @@
 import Link from 'next/link'
 import Image from 'next/image'
+import { useTheme } from "next-themes";
+import {FaMoon, FaSun} from "react-icons/fa"
 
 const Header = () => {
+    const { theme, setTheme } = useTheme();
   return (
       <header className="bg-gray-900 text-gray-100 shadow w-full">
           <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
@@ -29,6 +32,14 @@ const Header = () => {
                           About
                       </a>
                   </Link>
+
+                  <button
+                      onClick={() =>
+                          setTheme(theme === "dark" ? "light" : "dark")
+                      }
+                  >
+                      {theme === "dark" ? <FaSun/> : <FaMoon />}
+                  </button>
               </nav>
           </div>
       </header>

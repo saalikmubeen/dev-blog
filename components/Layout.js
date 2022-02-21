@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Header from './Header';
-import Search from './SEarch';
+import Search from './Search';
 
 const Layout = ({title, children, keywords, description}) => {
   return (

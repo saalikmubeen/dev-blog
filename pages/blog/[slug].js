@@ -15,7 +15,7 @@ const SinglePost = ({
     return (
         <Layout title={title}>
             <Link href="/blog">Go Back</Link>
-            <div className="w-full px-10 py-6 bg-white rounded-lg shadow-md mt-6">
+            <div className="w-full px-10 py-6 bg-white rounded-lg shadow-md mt-6 dark:text-white dark:bg-slate-800">
 
                 <div className="flex justify-between items-center mt-4">
                     <h1 className="text-5xl mb-7">{title}</h1>
@@ -24,7 +24,7 @@ const SinglePost = ({
 
                 <Image src={cover_image} alt="cover image of post" className="w-full rounded" width={500} height={500} layout="responsive" />
 
-                <div className="flex justify-between items-center bg-gray-100 p-2 my-8">
+                <div className="flex justify-between items-center bg-gray-100 p-2 my-8 dark:bg-slate-900">
 
                     <div className="flex items-center">
                         <img
