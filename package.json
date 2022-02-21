@@ -1,19 +1,28 @@
 {
-  "name": "dev-blog",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "next": "12.0.10",
-    "react": "17.0.2",
-    "react-dom": "17.0.2"
-  },
-  "devDependencies": {
-    "eslint": "8.9.0",
-    "eslint-config-next": "12.0.10"
-  }
+    "name": "dev-blog",
+    "private": true,
+    "scripts": {
+        "dev": "next dev",
+        "build": "next build",
+        "start": "next start",
+        "lint": "next lint",
+        "cache-posts": "node scripts/cache.js",
+        "prepare": "husky install"
+    },
+    "dependencies": {
+        "gray-matter": "^4.0.3",
+        "marked": "^4.0.12",
+        "next": "12.0.10",
+        "react": "17.0.2",
+        "react-dom": "17.0.2",
+        "react-icons": "^4.3.1"
+    },
+    "devDependencies": {
+        "autoprefixer": "^10.4.2",
+        "eslint": "8.9.0",
+        "eslint-config-next": "12.0.10",
+        "husky": "^7.0.4",
+        "postcss": "^8.4.5",
+        "tailwindcss": "^3.0.23"
+    }
 }
