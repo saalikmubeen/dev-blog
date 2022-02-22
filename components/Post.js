@@ -33,7 +33,7 @@ export default function Post({ post, compact }) {
             {!compact && (
                 <div className="flex justify-between items-center mt-6">
                     <Link href={`/blog/${post.slug}`}>
-                        <a className="text-gray-900 hover:text-blue-600">
+                        <a className="text-gray-900 hover:text-blue-600 dark:text-white">
                             Read More
                         </a>
                     </Link>

@@ -13,7 +13,7 @@ const PER_PAGE = 3;
 export default function PostsPerPage({ posts, categories, numPages, currentPage }) {
     return (
         <Layout>
-            <div className="flex justify-between">
+            <div className="md:flex md:justify-between">
                 <div className="md:w-3/4 w-full mr-10">
                     <h1 className="text-5xl border-b-4 p-5 font-bold">
                         All Posts

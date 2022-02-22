@@ -15,7 +15,7 @@ const Layout = ({title, children, keywords, description}) => {
           <Header/>
           <Search/>
 
-          <main className='container mx-auto my-7'>{children}</main>
+          <main className='container mx-auto my-7 px-3'>{children}</main>
       </>
   );
 }
