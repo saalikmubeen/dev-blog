@@ -38,7 +38,11 @@ const Header = () => {
                           setTheme(theme === "dark" ? "light" : "dark")
                       }
                   >
-                      {theme === "dark" ? <FaSun/> : <FaMoon />}
+                      {theme === "dark" ? (
+                          <FaSun size={20} />
+                      ) : (
+                          <FaMoon size={20} />
+                      )}
                   </button>
               </nav>
           </div>

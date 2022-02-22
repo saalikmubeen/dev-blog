@@ -2,50 +2,72 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(155, 155, 155, 0.7) transparent;
+}
+/* Works on Chrome/Edge/Safari */
+*::-webkit-scrollbar {
+    width: 2px;
+}
+*::-webkit-scrollbar-track {
+    background: transparent;
+}
+*::-webkit-scrollbar-thumb {
+    background-color: rgba(155, 155, 155, 0.7);
+    border-radius: 20px;
+    border: transparent;
+}
+
+* {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(155, 155, 155, 0.7) transparent;
+}
 
 p {
-  margin: 15px 0;
-  line-height: 1.8;
+    margin: 15px 0;
+    line-height: 1.8;
 }
 
 .blog-text ul,
 ol {
-  font-size: 110%;
-  line-height: 2.3;
-  font-weight: bold;
-  margin: 10px 0;
+    font-size: 110%;
+    line-height: 2.3;
+    font-weight: bold;
+    margin: 10px 0;
 }
 
 .blog-text pre {
-  background: slategray;
-  padding: 20px;
-  margin: 20px 0;
-  line-height: 2.3;
+    background: slategray;
+    padding: 20px;
+    margin: 20px 0;
+    line-height: 2.3;
+    overflow-x: scroll;
 }
 
 .blog-text h1 {
-  font-size: 35px;
+    font-size: 35px;
 }
 
 .blog-text h2,
 .blog-text h3,
 .blog-text h4 {
-  font-size: 27px;
+    font-size: 27px;
 }
 
 /* Fix category colors in production */
 .bg-yellow-600 {
-  background-color: #d97705;
+    background-color: #d97705;
 }
 .bg-blue-600 {
-  background: #3929eb;
+    background: #3929eb;
 }
 .bg-green-600 {
-  background-color: #049669;
+    background-color: #049669;
 }
 .bg-purple-600 {
-  background-color: #7730db;
+    background-color: #7730db;
 }
 .bg-red-600 {
-  background-color: #a70b34;
+    background-color: #a70b34;
 }
